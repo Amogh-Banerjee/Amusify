@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amusify - Get Addicted to Music</title>
+    <link rel="icon" type="image/x-icon" href="logo.png"> <!--Icon before the page title-->
+    <link rel="stylesheet" href="style.css"> <!--Linking the CSS file-->
+</head>
+
+<body>
+    <nav>
+        <ul> <!--The 'ul' inside the 'nav' contains the logo, app name, Home and About-->
+            <li class="brand"><img src="logo.png" alt="Amusify">Amusify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container"> <!--'container' contains the list of songs and the background image-->
+        <div class="songList">
+            <h1>Best of your songs here</h1>
+            <div class="songItemContainer"> <!--'songItemContainer' contains all the song items-->
+                <div class="songItem">
+                    <img alt="1"> <!--'img' tag is used to display the song cover-->
+                    <span class="songName">Song 1 name</span>
+                    <!--'fa-play-circle' is the play button against each song. It is an icon obtained from the fontawesome website-->
+                    <span class="songlistplay"> <span class="timestamp">04 : 50 <i id="0" class="fas songItemPlay fa-play-circle"></i> 
+                        </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Song 2 name</span>
+                    <span class="songlistplay"> <span class="timestamp">04 : 23 <i id="1" class="fas songItemPlay fa-play-circle"></i>
+                        </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Song 3 name</span>
+                    <span class="songlistplay"> <span class="timestamp">03 : 56 <i id="2" class="fas songItemPlay fa-play-circle"></i>
+                        </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Song 4 name</span>
+                    <span class="songlistplay"> <span class="timestamp">04 : 32 <i id="3" class="fas songItemPlay fa-play-circle"></i>
+                        </span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Song 5 name</span>
+                    <span class="songlistplay"> <span class="timestamp">04 : 23 <i id="4" class="fas songItemPlay fa-play-circle"></i>
+                        </span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bottom"> <!--'bottom' contains (i) a progress bar, (ii) a gif which indicates that a song is being played, 
+                            (iii) the song name and (iv) the time, (v) previous, play and next buttons-->
+        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0"> <!--Progress bar-->
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i> <!--Previous button-->
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i> <!--Play button-->
+            <i class="fas fa-3x fa-step-forward" id="next"></i> <!--Next button-->
+        </div>
+        <div class="songInfo"> <!--'songInfo contains the gif, the song name and the time'-->
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName"> Tere Sang Yaara </span> <span id="playedTime">00 : 00</span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/7713a3d239.js" crossorigin="anonymous"></script> <!--'fontawesome' kit-->
+    <script src="script.js"></script> <!--Linking with the Javascriopt file-->
+</body>
+
+</html>
